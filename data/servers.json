@@ -1851,6 +1851,25 @@
     }
   },
   {
+    "name": "QRX",
+    "url": "https://qrx.codes/developers/mcp",
+    "description": "Creates artistic, print-ready QR codes from a prompt and a link, checks that each one decodes before returning it, and serves it through a hosted qrx.to short link.",
+    "category": "utilities-and-examples",
+    "language": "TypeScript",
+    "provider": "QRX",
+    "tags": [
+      "qr-code",
+      "image-generation",
+      "design",
+      "api-key",
+      "remote"
+    ],
+    "official": true,
+    "endpoints": {
+      "streamableHttp": "https://qrx.codes/mcp"
+    }
+  },
+  {
     "name": "FractalAI Agent Passport",
     "url": "https://www.npmjs.com/package/@fractalai/agent-passport-mcp",
     "description": "Verifies ML-DSA-65 (FIPS 204) signed agent receipts offline and exposes pay-per-call x402 tools (USDC on Base) that return post-quantum signed receipts.",
