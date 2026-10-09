@@ -2286,6 +2286,17 @@ Retrieve CRM contacts, deals, lists and workflows, and create contacts in approv
 - Category: Finance, Commerce, and Business Apps
 - Streamable HTTP endpoint: https://api.app.firstsales.io/mcp
 
+### Glongus MCP
+
+Lets an agent buy and sell physical goods on the Glongus UK marketplace, with haggling, escrow, shipping and seller reputation.
+
+- URL: https://github.com/glongusmain/glongus-mcp
+- Language: JavaScript
+- Provider: Glongus
+- Official: yes
+- Tags: marketplace, ecommerce, escrow, shopping
+- Category: Finance, Commerce, and Business Apps
+
 ### HubSpot MCP Server
 
 Access HubSpot contacts, deals, and marketing automation data.
