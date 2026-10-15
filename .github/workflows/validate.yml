@@ -8,8 +8,6 @@ on:
       - "data/**"
       - "scripts/**"
       - "*.md"
-      - "llms.txt"
-      - "llms-full.txt"
       - "package.json"
 
 permissions:

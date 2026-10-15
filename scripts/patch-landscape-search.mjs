@@ -57,12 +57,6 @@ html = html.replace(
   /<link rel="canonical" href="[^"]*"\s*\/?>/,
   `<link rel="canonical" href="${siteUrl}" />`
 );
-if (!html.includes('rel="describedby"')) {
-  html = html.replace(
-    `<link rel="canonical" href="${siteUrl}" />`,
-    `<link rel="canonical" href="${siteUrl}" />\n        <link rel="describedby" href="${siteUrl}/llms.txt" />\n        <link rel="alternate" type="text/markdown" href="${siteUrl}/llms-full.txt" title="Awesome MCP Servers catalog" />`
-  );
-}
 
 const faviconLink = '<link rel="icon" href="./images/logo.png" type="image/png" />';
 if (!html.includes('rel="icon"')) {
@@ -228,7 +222,7 @@ function writeRobotsAndSitemap(dir, url) {
   );
   writeFileSync(
     join(dir, "sitemap.xml"),
-    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url>\n    <loc>${url}/</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n  </url>\n  <url>\n    <loc>${url}/llms.txt</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n  </url>\n  <url>\n    <loc>${url}/llms-full.txt</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n  </url>\n</urlset>\n`
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url>\n    <loc>${url}/</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n  </url>\n</urlset>\n`
   );
 }
 
