@@ -196,24 +196,8 @@ function publishCatalogData() {
   }
 }
 
-function publishLlms() {
-  const generate = spawnSync(
-    "node",
-    [
-      join(root, "scripts/generate-llms.mjs"),
-      "--out",
-      join(landscapeDir, "build"),
-    ],
-    { stdio: "inherit" }
-  );
-  if (generate.status !== 0) {
-    process.exit(generate.status ?? 1);
-  }
-}
-
 if ((result.status ?? 1) === 0) {
   publishCatalogData();
-  publishLlms();
   const patch = spawnSync(
     "node",
     [join(root, "scripts/patch-landscape-search.mjs")],

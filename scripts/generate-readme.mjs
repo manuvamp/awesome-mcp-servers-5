@@ -103,7 +103,7 @@ MCP is an open protocol that lets AI applications connect to external tools and 
 
 - **Curated, not scraped.** Every entry is reviewed against the [quality criteria](#quality-criteria). Spam, impersonators, and abandoned forks are rejected.
 - **No dead links.** Every link is checked on each pull request and again every week. Broken entries get fixed or removed.
-- **Structured data.** Every server has a category, language, provider, tags, and an official/community flag in [\`data/servers.json\`](data/servers.json). The README, [\`llms.txt\`](llms.txt), [\`llms-full.txt\`](llms-full.txt), and the landscape are generated from that file.
+- **Structured data.** Every server has a category, language, provider, tags, and an official/community flag in [\`data/servers.json\`](data/servers.json). The README and the landscape are both generated from that file.
 - **Built to be reused.** You can pull the whole catalog as JSON into your own tools, agents, or dashboards.
 
 If this list saves you time, please ⭐ star the repo. It helps other people find it.
@@ -111,8 +111,7 @@ If this list saves you time, please ⭐ star the repo. It helps other people fin
 ## Quick Links
 
 - [MCP Landscape](https://landscape.mcphq.org/): interactive server map
-- [Use the data](#use-the-data): JSON API and LLM catalog files
-- [LLM index](https://landscape.mcphq.org/llms.txt): short catalog index for agents
+- [Use the data](#use-the-data): JSON API for tools and agents
 - [Listed on mcpHQ badge](#listed-on-mcphq-badge): for server maintainers
 - [Official MCP Registry](https://registry.modelcontextprotocol.io/)
 - [MCP Specification](https://modelcontextprotocol.io/specification/latest)
@@ -127,14 +126,12 @@ ${sections}
 
 ## Use the Data
 
-The full catalog is published with every landscape deploy:
+The full catalog is published as JSON with every landscape deploy:
 
 | File | URL |
 | --- | --- |
 | Servers | [\`https://landscape.mcphq.org/api/servers.json\`](https://landscape.mcphq.org/api/servers.json) |
 | Categories | [\`https://landscape.mcphq.org/api/categories.json\`](https://landscape.mcphq.org/api/categories.json) |
-| LLM index | [\`https://landscape.mcphq.org/llms.txt\`](https://landscape.mcphq.org/llms.txt) |
-| LLM full catalog | [\`https://landscape.mcphq.org/llms-full.txt\`](https://landscape.mcphq.org/llms-full.txt) |
 
 \`\`\`bash
 curl -s https://landscape.mcphq.org/api/servers.json | jq '.[] | select(.official) | .name'
@@ -167,11 +164,11 @@ An entry is removed if its link stays broken, its repository is archived without
 
 Found a great MCP server? Read [CONTRIBUTING.md](CONTRIBUTING.md) and open a PR with an entry in \`data/servers.json\`.
 
-Then regenerate the README and LLM catalog files:
+Then regenerate the README:
 
 \`\`\`bash
-npm run generate
-npm run validate
+node scripts/generate-readme.mjs
+node scripts/validate-data.mjs
 \`\`\`
 
 See [landscape/README.md](landscape/README.md) for how the landscape is built and how to preview or customize it locally.
