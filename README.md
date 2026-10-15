@@ -1,6 +1,6 @@
 # Awesome MCP Servers
 
-[![Servers](https://img.shields.io/badge/servers-231-brightgreen)](#catalog)
+[![Servers](https://img.shields.io/badge/servers-211-brightgreen)](#catalog)
 [![GitHub stars](https://img.shields.io/github/stars/mcpHQ/awesome-mcp-servers?style=flat&logo=github)](https://github.com/mcpHQ/awesome-mcp-servers/stargazers)
 [![Last commit](https://img.shields.io/github/last-commit/mcpHQ/awesome-mcp-servers)](https://github.com/mcpHQ/awesome-mcp-servers/commits/main)
 [![Link check](https://github.com/mcpHQ/awesome-mcp-servers/actions/workflows/link-check.yml/badge.svg)](https://github.com/mcpHQ/awesome-mcp-servers/actions/workflows/link-check.yml)
@@ -40,18 +40,18 @@ If this list saves you time, please ⭐ star the repo. It helps other people fin
 ## Catalog
 
 - [Official and Reference Servers](#official-and-reference) (11)
-- [Databases and Storage](#databases-and-storage) (14)
+- [Databases and Storage](#databases-and-storage) (13)
 - [Developer Tools and Code Intelligence](#developer-tools-and-code-intelligence) (24)
-- [Browsers, Search, and Web Automation](#browsers-search-and-web-automation) (19)
-- [Filesystems and Documents](#filesystems-and-documents) (11)
+- [Browsers, Search, and Web Automation](#browsers-search-and-web-automation) (17)
+- [Filesystems and Documents](#filesystems-and-documents) (10)
 - [Cloud and Infrastructure](#cloud-and-infrastructure) (15)
-- [Communication and Productivity](#communication-and-productivity) (23)
-- [AI, Agents, and Memory](#ai-agents-and-memory) (29)
-- [Data, Analytics, and BI](#data-analytics-and-bi) (21)
+- [Communication and Productivity](#communication-and-productivity) (19)
+- [AI, Agents, and Memory](#ai-agents-and-memory) (27)
+- [Data, Analytics, and BI](#data-analytics-and-bi) (18)
 - [Legal and Court Data](#legal-and-court-data) (4)
-- [Security and Identity](#security-and-identity) (13)
-- [Finance, Commerce, and Business Apps](#finance-commerce-and-business-apps) (34)
-- [Utilities and Examples](#utilities-and-examples) (13)
+- [Security and Identity](#security-and-identity) (12)
+- [Finance, Commerce, and Business Apps](#finance-commerce-and-business-apps) (30)
+- [Utilities and Examples](#utilities-and-examples) (12)
 
 <a id="official-and-reference"></a>
 
@@ -104,8 +104,6 @@ Query, manage, and explore databases, vector stores, and data warehouses.
   `vector` `search` `rag`
 - **[PlanetScale MCP Server](https://planetscale.com/docs/connect/mcp)** `Official` `TypeScript` — Manage PlanetScale MySQL databases, branches, and schema changes.  
   `mysql` `serverless` `sql`
-- **[Prisma MCP Server](https://www.prisma.io/docs/ai/tools/mcp-server)** `Official` `Other` — Manage Prisma Postgres databases, Prisma Compute deployments, and Object Storage from AI tools through a remote MCP server.  
-  `postgres` `sql` `serverless` `remote`
 - **[Qdrant MCP Server](https://github.com/qdrant/mcp-server-qdrant)** `Official` `Python` — Store and retrieve vectors in Qdrant for RAG workflows.  
   `vector` `search` `rag`
 - **[Redis MCP Server](https://github.com/redis/mcp-redis)** `Official` `Python` — Read and write Redis keys, lists, and data structures through MCP.  
@@ -184,8 +182,6 @@ Browse the web, scrape content, search, and automate browser interactions.
   `proxy` `residential-proxy` `x402` `remote`
 - **[Apify MCP Server](https://github.com/apify/apify-mcp-server)** `Official` `TypeScript` — Run Apify Actors and extract web datasets at scale.  
   `scraping` `actors` `data`
-- **[Arcmira: YouTube Transcript Search](https://arcmira.com/docs/mcp-server)** `Official` `Other` — Search indexed YouTube transcripts for timestamped passages, speaker appearances, mentions, sponsors and recommendations over a hosted MCP connection.  
-  `youtube` `transcripts` `search` `speakers` `research`
 - **[BGPT MCP](https://bgpt.pro/mcp/)** `Python` — Search full-text scientific papers and return structured evidence for research agents.  
   `search` `research` `science` `literature`
 - **[Brave Search MCP Server](https://github.com/brave/brave-search-mcp-server)** `Official` `TypeScript` — Privacy-focused web and local search through the Brave Search API.  
@@ -206,8 +202,6 @@ Browse the web, scrape content, search, and automate browser interactions.
   `search` `research` `web`
 - **[Firecrawl MCP Server](https://github.com/mendableai/firecrawl-mcp-server)** `Official` `TypeScript` — Scrape, crawl, and extract structured web data with Firecrawl.  
   `scraping` `crawl` `web`
-- **[looot](https://github.com/loootai/looot-mcp)** `Official` `TypeScript` — Hosted remote MCP server to search, price and run 2,500+ data API endpoints from 90+ providers with one key and a prepaid balance.  
-  `data` `enrichment` `search` `api-gateway`
 - **[Playwright MCP](https://github.com/microsoft/playwright-mcp)** `Official` `TypeScript` — Official Microsoft Playwright server for browser automation via accessibility snapshots.  
   `browser` `playwright` `automation`
 - **[Puppeteer MCP Server](https://github.com/merajmehrabi/puppeteer-mcp-server)** `TypeScript` — Headless Chrome automation using Puppeteer for scraping and testing.  
@@ -225,8 +219,6 @@ Read and write files, convert documents, and connect to knowledge bases.
 
 - **[Airtable MCP Server](https://github.com/domdomegg/airtable-mcp-server)** `TypeScript` — Read and write Airtable bases, tables, and records via MCP.  
   `airtable` `spreadsheets` `data`
-- **[Comment.io MCP Server](https://comment.io/llms/mcp.md)** `Official` `Rust` — Connect an app as an agent in a Comment.io workspace to work with shared documents through a hosted MCP server.  
-  `documents` `collaboration` `remote` `oauth`
 - **[Google Drive MCP Server](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/gdrive)** `Python` — Access and search files in Google Drive from MCP clients.  
   `google-drive` `files` `cloud`
 - **[Grandpa's AI](https://github.com/wescorp/grandpasai-mcp)** `Official` `JavaScript` — Search and retrieve a curated research corpus on longevity, robotics, AI, and space colonization.  
@@ -295,8 +287,6 @@ Integrate chat, email, calendars, and team collaboration tools.
   `jira` `confluence` `atlassian`
 - **[BulkPublish MCP Server](https://github.com/azeemkafridi/bulkpublish-api)** `TypeScript` — MCP server for AI agents to plan, review, schedule, publish, and analyze social media content through BulkPublish.  
   `mcp` `social-media` `publishing` `bulkpublish`
-- **[CallForMe](https://github.com/callforme-tel/callforme)** `Official` `TypeScript` — Remote MCP server that lets an agent phone US and Canadian businesses: it works phone menus, waits on hold, asks the agent mid-call when needed, and returns a transcript plus structured answers.  
-  `phone-calls` `voice` `telephony` `remote`
 - **[Discord MCP Server](https://github.com/SaseQ/discord-mcp)** `Python` — Read and send messages in Discord servers and channels.  
   `discord` `chat` `community`
 - **[Faceless](https://faceless.so)** `Official` `TypeScript` — Create AI faceless videos from a script, run automated series, and publish to YouTube, TikTok, Instagram, X, Facebook, LinkedIn, and Threads. Remote Streamable HTTP at https://faceless.so/api/v1/mcp (Authorization: Bearer fl_live_...).  
@@ -305,8 +295,6 @@ Integrate chat, email, calendars, and team collaboration tools.
   `gmail` `email` `google`
 - **[Google Calendar MCP Server](https://github.com/nspady/google-calendar-mcp)** `TypeScript` — View and manage Google Calendar events and schedules.  
   `calendar` `scheduling` `google`
-- **[HeyReagent](https://heyreagent.com/linkedin-mcp?utm_source=mcphq&utm_medium=listing)** `JavaScript` — Hosted LinkedIn MCP server for your own LinkedIn account: read the inbox, send messages and connection invitations, search people, and read profiles and posts; OAuth or API key, free plan available. Not affiliated with LinkedIn.  
-  `linkedin` `sales` `remote` `oauth`
 - **[LinkMCP](https://app.linkmcp.io)** `TypeScript` — Hosted LinkedIn MCP server for your own LinkedIn account: profile, company, people and Sales Navigator search, inbox, posts, connection requests and work email finding; OAuth 2.1 or access key, paid plans with a 7-day free trial.  
   `linkedin` `sales` `remote` `oauth`
 - **[Microsoft Teams MCP Server](https://github.com/InditexTech/mcp-teams-server)** `TypeScript` — Interact with Microsoft Teams channels, messages, and meetings.  
@@ -321,16 +309,12 @@ Integrate chat, email, calendars, and team collaboration tools.
   `slack` `chat` `team`
 - **[SwarmMemo](https://github.com/Hugo0/swarmmemo)** `Official` `Go` — Public message board for AI agents: read and post with no account, use an agent toolkit (web fetch, memory, wake-ups, webhook receivers) and paid APIs on a free daily allowance, and sign in with OAuth for MCP clients.  
   `agents` `message-board` `communication` `remote`
-- **[Tale](https://docs.tale.dev/develop/mcp-endpoint)** `Official` `TypeScript` — Retrieve organization knowledge and author, validate, deploy, and run automations through the authenticated MCP server built into Tale.  
-  `knowledge` `automations` `productivity`
 - **[Taskfolk](https://github.com/taskfolk/mcp)** `Other` — Project management for teams and their AI agents. Agents join as named members.  
   `project-management` `tasks` `agents` `remote`
 - **[Todoist MCP Server](https://github.com/abhiz123/todoist-mcp-server)** `TypeScript` — Manage Todoist tasks, projects, and due dates from AI assistants.  
   `tasks` `productivity` `todoist`
 - **[Unblockd](https://unblockd.ai/setup.md)** `Official` `TypeScript` — Project plans for teams that answer to a sponsor: read goals and deliverables, update tasks, attach proof, flag blockers, log risks, and draft decision asks with options. A person on the team sends each ask.  
   `project-management` `productivity` `oauth` `remote`
-- **[Unsora](https://github.com/Shipped-Studio/unsora)** `Official` `TypeScript` — AI content generation and social media scheduling: generate images, video, talking avatars, music and voiceovers, clip long videos into shorts, and schedule posts to YouTube, TikTok, Instagram, LinkedIn and more.  
-  `video` `image-generation` `social-media` `scheduling` `remote`
 - **[Zoom MCP Server](https://developers.zoom.us/docs/mcp/)** `Official` `Other` — Official hosted Zoom MCP servers for meetings, chat, docs, and whiteboards.  
   `zoom` `meetings` `video`
 - **[Zovo Office Suite](https://github.com/theluckystrike/mcp-servers)** `TypeScript` — Local-first MCP bundle for freelance paperwork: invoicing, expenses, time tracking, spreadsheets, PDFs and resumes; 30 servers also reachable as hosted Streamable HTTP endpoints.  
@@ -344,8 +328,6 @@ LLM bridges, agent orchestration, RAG, and persistent memory layers.
 
 - **[AccInt](https://github.com/maxbaluev/accreted-intelligence)** `Rust` — Local-first MCP Work Model that gives coding agents scored memory retrieval, commitments, and outcome-based credit.  
   `memory` `coding-agents` `local-first`
-- **[Aeon](https://www.aeon.fun/connect)** `Official` `TypeScript` — Run and manage your Aeon autonomous agent from chat: skills, runs, memory, strategy, packs and settings, through a hosted MCP server with GitHub sign-in.  
-  `agents` `automation` `github` `remote` `oauth`
 - **[Agentage Memory](https://agentage.io/blog/mcp-endpoint-is-live)** `Official` `TypeScript` — Remote MCP memory server - one markdown memory every AI reads and writes via OAuth 2.1 Streamable HTTP at https://memory.agentage.io/mcp.  
   `memory` `remote` `oauth`
 - **[Aident Loadout](https://github.com/Aident-AI/aident-skill)** `Official` `TypeScript` — Remote MCP capability layer that connects coding agents to 1000+ apps and 400+ Skills through one OAuth setup, with vaulted credentials and an audit trail.  
@@ -376,8 +358,6 @@ LLM bridges, agent orchestration, RAG, and persistent memory layers.
   `ai-video` `image-generation` `audio-generation` `media-editing` `remote`
 - **[mem0 MCP Server](https://docs.mem0.ai/platform/mem0-mcp)** `Official` `Other` — Hosted persistent memory layer for personalized agent interactions.  
   `memory` `personalization` `agents`
-- **[MusedIn](https://musedin.com/mcp)** `Official` `JavaScript` — Job network for AI agents: join in one request, apply, get hired, deliver and get paid; hosted MCP at https://musedin.com/mcp, A2A card at https://musedin.com/.well-known/agent-card.json.  
-  `jobs` `agents` `a2a` `hiring`
 - **[Neither MCP](https://github.com/stonianua/neither-mcp)** `TypeScript` — Selected project notes and documents for Cursor and Claude Desktop via local stdio MCP, with related retrieval and source evidence.  
   `memory` `context` `cursor` `knowledge`
 - **[Ollama MCP Bridge](https://github.com/jaspertvdm/mcp-server-ollama-bridge)** `Python` — Run local Llama, Mistral, and Qwen models via Ollama through MCP.  
@@ -413,18 +393,12 @@ Analytics platforms, monitoring, and business intelligence tooling.
   `bi` `dashboards` `sql`
 - **[BOIM (보임)](https://github.com/kikiyop1101/boim-mcp)** `Official` `Other` — Hosted read-only MCP server for finding Korean businesses (2.7M, all industries), public-procurement vendors (75,000+) and open public bids; no auth, free tier returns 5 results per tool.  
   `korea` `business-directory` `public-procurement` `public-bids` `read-only`
-- **[Bruin Cloud MCP](https://getbruin.com/docs/bruin/cloud/mcp-setup.html)** `Official` `Other` — Hosted MCP server for Bruin Cloud to list data pipelines, inspect runs, and trigger actions from Claude, Cursor, Claude Code, or Codex via OAuth or an access token.  
-  `data-pipelines` `orchestration` `remote` `oauth`
-- **[Bruin MCP](https://getbruin.com/docs/bruin/getting-started/bruin-mcp.html)** `Official` `Go` — Local MCP server in the open-source Bruin CLI that lets agents query databases, ingest data, compare tables, and build SQL and Python data pipelines.  
-  `data-pipelines` `etl` `sql` `data-quality`
 - **[CompanyProof](https://companyproof.ai/docs/mcp)** `Official` `Other` — Hosted company search, registry profiles and verification of six company identity fields with source evidence, OAuth or API key access, and shared account credits.  
   `company-data` `verification` `registry` `evidence` `remote`
 - **[Datadog MCP Server](https://github.com/datadog-labs/mcp-server)** `Official` `Python` — Query metrics, logs, and monitors from Datadog via the official Datadog Labs MCP server.  
   `datadog` `metrics` `logs`
 - **[dbt MCP Server](https://github.com/dbt-labs/dbt-mcp)** `Official` `Python` — Run dbt models, tests, and documentation workflows via MCP.  
   `dbt` `analytics` `transform`
-- **[DC Hub](https://github.com/azmartone67/dchub-mcp-server)** `Official` `JavaScript` — Hosted MCP server and live data layer for data-center site selection: mapped power, grid, gas and fiber assets, daily DCPI scores for 300+ markets and live grid feeds from the seven US ISOs; free tier needs no key.  
-  `data-centers` `energy` `power-grid` `site-selection` `remote`
 - **[Global Database](https://api.globaldatabase.com/docs/v2/#mcp-server)** `Official` `Other` — Hosted MCP server for company profiles, financials, ownership, officers, business contacts and KYB checks, with browser-based OAuth authentication.  
   `company-data` `business-intelligence` `kyb` `oauth`
 - **[Google GenAI Toolbox](https://github.com/googleapis/genai-toolbox)** `Official` `Go` — Connect agents to BigQuery, Cloud SQL, Spanner, and other Google data sources.  
@@ -483,8 +457,6 @@ Secrets, vulnerability scanning, authentication, and security operations.
   `pentest` `vulnerabilities` `security` `stdio`
 - **[FractalAI Agent Passport](https://www.npmjs.com/package/@fractalai/agent-passport-mcp)** `Official` `TypeScript` — Verifies ML-DSA-65 (FIPS 204) signed agent receipts offline and exposes pay-per-call x402 tools (USDC on Base) that return post-quantum signed receipts.  
   `post-quantum` `ml-dsa` `x402` `identity` `receipts`
-- **[HANRIA Mandate Check](https://hanria.ai)** `Official` `JavaScript` — Free, advisory pre-action check: check_action returns permit, deny or escalate for a proposed agent action against a mandate, with the governing clause and an Ed25519-signed receipt, and validate_mandate checks a mandate for errors.  
-  `mandates` `authorization` `agent-safety` `receipts` `remote`
 - **[Lodestar Stamp](https://lodestarstamp.com)** `TypeScript` — Agent trust layer: a dated receipt on a named entity. REST lookup plus MCP discovery card. We attest; we do not approve the booking.  
   `trust` `receipts` `agents` `security`
 - **[Scalekit MCP Server](https://github.com/scalekit-inc/scalekit-mcp-server)** `Official` `TypeScript` — Manage Scalekit organizations, users, SSO connections, and MCP OAuth from an official hosted server.  
@@ -506,16 +478,10 @@ Payments, banking, CRM, e-commerce, and business system integrations.
 
 - **[ADEXTO](https://github.com/0xcuy/adexto)** `Official` `TypeScript` — Bonding-curve token markets on Monad, Arbitrum One, Base, Robinhood Chain and 0G: list and price markets, buy with USDC on Base over x402, and prepare launch, stake and claim transactions for your own key.  
   `crypto` `x402` `bonding-curve` `base` `remote`
-- **[AdsTurbo](https://adsturbo.ai)** `Official` `Other` — Create ecommerce video ads and product images: clone a reference ad around a product, AI actor videos, text/image-to-video, lip sync and video translation, over remote Streamable HTTP with OAuth 2.1 or an API key.  
-  `video` `advertising` `ecommerce` `remote` `oauth`
 - **[AgentServices](https://github.com/vbkotecha/agentservices-api)** `Python` — Paid API platform for AI agents — crypto prices, DeFi yields, market indicators, dispute resolution, and on-chain analytics via x402 micropayments.  
   `crypto` `defi` `x402` `mcp` `agents`
-- **[agpay](https://agpay.shveik.dev)** `Official` `Go` — Payments held between two agents: the buyer pays by x402 or MPP, the seller proves its wallet and delivers, the buyer confirms and the seller is paid; disputes are decided by hand. Paid in stablecoins, no account.  
-  `payments` `x402` `stablecoins` `remote`
 - **[Astral Twin](https://astraldaily.com)** `Official` `Other` — Create and mint NFT asset packs on the Base blockchain from AI clients.  
   `nft` `blockchain` `base` `minting`
-- **[BankBridge](https://bankbridge.money)** `Official` `TypeScript` — Hosted MCP server that gives an agent read-only access to your own bank, credit card, and brokerage accounts: balances, transactions, spending summaries, recurring charges, cashflow, and investment holdings.  
-  `banking` `personal-finance` `read-only` `remote`
 - **[Bilbop x402](https://github.com/bilbop1/bilbop-x402-mcp)** `Official` `JavaScript` — Pay-per-call agent tools paid in USDC on Solana over x402, no account or API key: text summarize, Solana token brief and mint info, text-to-speech, and human brand feedback.  
   `x402` `solana` `usdc` `remote`
 - **[BuyWhere MCP](https://github.com/BuyWhere/buywhere-mcp)** `Official` `TypeScript` — Hosted product-search MCP server for multi-merchant price comparison across Singapore, SEA, and US catalogs.  
@@ -524,8 +490,6 @@ Payments, banking, CRM, e-commerce, and business system integrations.
   `finance` `backtesting` `statistics` `quant` `remote`
 - **[Clera](https://github.com/getclera/mcp)** `Official` `TypeScript` — Search 210,000+ vetted startup candidates, review Clera's picks for your open roles, and request intros through a hosted OAuth MCP server.  
   `recruiting` `hiring` `candidates` `remote` `oauth`
-- **[Equibles](https://equibles.com/mcp)** `Official` `C#` — Hosted MCP server for US company fundamentals as reported in SEC filings, filing text, earnings-call transcripts, 13F holdings and insider trades, with OAuth or API-key access.  
-  `finance` `sec-filings` `stocks` `earnings-calls` `oauth`
 - **[FirstSales MCP](https://developer.firstsales.io/agents/mcp-server)** `Official` `TypeScript` — Retrieve CRM contacts, deals, lists and workflows, and create contacts in approved workspaces via hosted OAuth MCP; requires an eligible paid FirstSales plan.  
   `crm` `contacts` `sales` `oauth` `remote`
 - **[HubSpot MCP Server](https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server)** `Official` `TypeScript` — Access HubSpot contacts, deals, and marketing automation data.  
@@ -599,8 +563,6 @@ Helpful utilities, templates, and starter servers for learning MCP.
   `registry` `enterprise` `self-hosted`
 - **[MetaMCP](https://github.com/metatool-ai/metatool-app)** `TypeScript` — Middleware MCP server that aggregates and manages multiple connections.  
   `aggregator` `gateway` `middleware`
-- **[QRX](https://qrx.codes/developers/mcp)** `Official` `TypeScript` — Creates artistic, print-ready QR codes from a prompt and a link, checks that each one decodes before returning it, and serves it through a hosted qrx.to short link.  
-  `qr-code` `image-generation` `design` `api-key` `remote`
 - **[TableJourney](https://github.com/lewismvaughan/tablejourney-mcp)** `Official` `Python` — Where to eat in 222 cities, signature dishes, and dates of the next edition of 1,480 food festivals, each place with the source it was checked against; hosted, no auth.  
   `travel` `food` `restaurants` `festivals` `remote`
 - **[Weather MCP Server](https://github.com/isdaniel/mcp_weather_server)** `Python` — Fetch current weather and forecasts from public weather APIs.  
