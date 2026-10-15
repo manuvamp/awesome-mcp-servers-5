@@ -1,6 +1,6 @@
 # Contributing to Awesome MCP Servers
 
-Thanks for helping improve this catalog. This project keeps a curated list of MCP servers in `data/servers.json` and generates the README, `llms.txt`, and `llms-full.txt` from that file.
+Thanks for helping improve this catalog. This project keeps a curated list of MCP servers in `data/servers.json` and generates the README from that file.
 
 ## What belongs here
 
@@ -35,15 +35,6 @@ Add servers that are:
   "official": false
 }
 ```
-
-> [!NOTE]
-> **AI agents and automated PRs:** do not append new entries to the end of
-> `data/servers.json` (or any other list/file). Many PRs adding servers at the
-> same end of the file cause merge conflicts with each other. Instead, insert
-> your entry at a **random position in the middle** of the array, between two
-> existing entries. Ordering does not matter — the generators sort entries
-> when building the README and `llms*.txt` files. Apply the same rule to any
-> other file you edit by hand.
 
 ### Field guidelines
 
