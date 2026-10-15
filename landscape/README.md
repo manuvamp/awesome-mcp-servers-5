@@ -13,15 +13,12 @@ data/servers.json
        │
        ├─► scripts/generate-readme.mjs  → README.md
        │
-       ├─► scripts/generate-llms.mjs    → llms.txt, llms-full.txt
-       │
        └─► scripts/fetch-logos.mjs
                │
                └─► scripts/generate-landscape.mjs  → landscape/data.yml (generated)
                        │
                        └─► landscape2 build  → landscape/build/ (generated)
                                │
-                               ├─► /llms.txt, /llms-full.txt, /api/*.json
                                └─► scripts/patch-landscape-search.mjs  → search + favicon patches
 ```
 
@@ -92,7 +89,7 @@ Open the URL printed by `landscape2 serve` (usually `http://127.0.0.1:8000`).
 ## Adding or updating servers
 
 1. Edit [`data/servers.json`](../data/servers.json) — see [CONTRIBUTING.md](../CONTRIBUTING.md).
-2. Run validation and regenerate the README and LLM catalog files:
+2. Run validation and regenerate the README:
 
    ```bash
    npm run validate
@@ -126,7 +123,7 @@ After editing `settings.yml` or `guide.yml`, rebuild:
 npm run build-landscape
 ```
 
-**Note:** Landscape2 appends `" Landscape"` to the foundation name in page titles. The build patch script corrects this, sets the public page title, and writes `robots.txt`, `sitemap.xml`, and the Open Graph image into the build. The same build writes `llms.txt` and `llms-full.txt` at the site root, and links the homepage to them.
+**Note:** Landscape2 appends `" Landscape"` to the foundation name in page titles. The build patch script corrects this, sets the public page title, and writes `robots.txt`, `sitemap.xml`, and the Open Graph image into the build.
 
 ## GitHub Pages
 
