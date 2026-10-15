@@ -36,15 +36,6 @@ Add servers that are:
 }
 ```
 
-> [!NOTE]
-> **AI agents and automated PRs:** do not append new entries to the end of
-> `data/servers.json` (or any other list/file). Many PRs adding servers at the
-> same end of the file cause merge conflicts with each other. Instead, insert
-> your entry at a **random position in the middle** of the array, between two
-> existing entries. Ordering does not matter — the generators sort entries
-> when building the README and `llms*.txt` files. Apply the same rule to any
-> other file you edit by hand.
-
 ### Field guidelines
 
 | Field | Required | Notes |
