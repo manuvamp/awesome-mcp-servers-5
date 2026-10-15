@@ -5,8 +5,8 @@
   "scripts": {
     "prepare": "node scripts/install-hooks.mjs",
     "validate": "node scripts/validate-data.mjs",
-    "generate": "node scripts/generate-readme.mjs && node scripts/generate-llms.mjs",
-    "check-generated": "node scripts/generate-readme.mjs --check && node scripts/generate-llms.mjs --check",
+    "generate": "node scripts/generate-readme.mjs",
+    "check-generated": "node scripts/generate-readme.mjs --check",
     "fetch-logos": "node scripts/fetch-logos.mjs",
     "generate-landscape": "node scripts/fetch-logos.mjs && node scripts/generate-landscape.mjs",
     "build-landscape": "node scripts/build-landscape.mjs",
